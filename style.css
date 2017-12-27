@@ -16,8 +16,9 @@ header, section, div {
 
 
 section {
-  padding: 5%;
+  padding: 5% 5% 0 5%;
 }
+
 .padded {
   padding: 1%;
 }
@@ -26,13 +27,16 @@ section {
 }
 
 
-
 .padded-5 {
   padding: 5%;
 }
 
 .padded-top {
   padding-top: 5%;
+}
+
+.padded-bottom {
+  padding-bottom: 5%;
 }
 .center {
   text-align:center;
@@ -126,7 +130,11 @@ a:hover {
 /* featured section */
 
 .featured {
-  background-color:  #ffcc00;
+  background-color: #ffcc00;
+}
+
+.orange-border {
+    border: 10px solid #ffcc00;
 }
 
 .light {

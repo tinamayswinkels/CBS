@@ -95,24 +95,24 @@
     </div><!-- end of light div -->
 
   </section>
-  <section class="featured grid">
+  <section class="featured grid padded-bottom">
     {% for item in site.scholarships %}
-    <div class="col-6_sm-12 light padded">
-      <h2> {{item.title}} </h2>
-      <h4>{{item.school}} | {{item.course}} </h4>
-      <span class="tag">{{item.category}}</span>
-      <p> {{item.description}}</p>
-      <div class="stat small">
-        <p> <span class="highlight">Course Location:</span> {{item.location}}</p>
-        <p> <span class="highlight">Course Length:</span> {{item.length}}</p>
-        <p> <span class="highlight">Tuition Cost:</span> {{item.cost}}</p>
-        <p> <span class="highlight">Scholarship Value:</span> {{item.value}}</p>
-        <p> <span class="highlight">Housing Included?:</span> {{item.housing}}</p>
-        <p> <span class="highlight">Visit Website:</span> {{item.website}}</p>
-      </div>
-      {% if item.apply %}
-      <a href="{{item.website}}" class="button"> APPLY NOW </a>
-      {% endif %}
+    <div class="col-6_sm-12 light padded orange-border">
+            <h2> {{item.title}} </h2>
+            <h4>{{item.school}} | {{item.course}} </h4>
+            <span class="tag">{{item.category}}</span>
+            <p> {{item.description}}</p>
+            <div class="stat small">
+              <p> <span class="highlight">Course Location:</span> {{item.location}}</p>
+              <p> <span class="highlight">Course Length:</span> {{item.length}}</p>
+              <p> <span class="highlight">Tuition Cost:</span> {{item.cost}}</p>
+              <p> <span class="highlight">Scholarship Value:</span> {{item.value}}</p>
+              <p> <span class="highlight">Housing Included?:</span> {{item.housing}}</p>
+              <p> <span class="highlight">Visit Website:</span> <a href="{{item.website}}">{{item.website}}</a></p>
+            </div>
+            {% if item.apply %}
+              <a href="{{item.website}}" class="button"> VISIT WEBSITE </a>
+            {% endif %}
     </div>
   {% endfor %}
 

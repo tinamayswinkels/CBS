@@ -1,8 +1,3 @@
----
-
----
-
-
 <!DOCTYPE>
 <html>
 <head>
@@ -96,25 +91,25 @@
 
   </section>
   <section class="featured grid">
-    {% for item in site.scholarships %}
+    
     <div class="col-6_sm-12 light padded">
-      <h2> {{item.title}} </h2>
-      <h4>{{item.school}} | {{item.course}} </h4>
-      <span class="tag">{{item.category}}</span>
-      <p> {{item.description}}</p>
+      <h2> $500 LGBTIQ Scholarship </h2>
+      <h4>Institute of Code | Web Development Bootcamp </h4>
+      <span class="tag">LGTBIQ</span>
+      <p> IOC is passionate about seeing more diversity in tech, so every year we give away up to 10x partial scholarhips for any LGTBIQ individuals who want to learn web development.</p>
       <div class="stat small">
-        <p> <span class="highlight">Course Location:</span> {{item.location}}</p>
-        <p> <span class="highlight">Course Length:</span> {{item.length}}</p>
-        <p> <span class="highlight">Tuition Cost:</span> {{item.cost}}</p>
-        <p> <span class="highlight">Scholarship Value:</span> {{item.value}}</p>
-        <p> <span class="highlight">Housing Included?:</span> {{item.housing}}</p>
-        <p> <span class="highlight">Visit Website:</span> {{item.website}}</p>
+        <p> <span class="highlight">Course Location:</span> Bali</p>
+        <p> <span class="highlight">Course Length:</span> 2+ weeks remote prep + 10 days intensive</p>
+        <p> <span class="highlight">Tuition Cost:</span> $4250</p>
+        <p> <span class="highlight">Scholarship Value:</span> $500</p>
+        <p> <span class="highlight">Housing Included?:</span> Yes!</p>
+        <p> <span class="highlight">Visit Website:</span> www.instituteofcode.com</p>
       </div>
-      {% if item.apply %}
-      <a href="{{item.website}}" class="button"> APPLY NOW </a>
-      {% endif %}
+      
+      <a href="www.instituteofcode.com" class="button"> APPLY NOW </a>
+      
     </div>
-  {% endfor %}
+  
 
 
 </body>

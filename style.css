@@ -126,7 +126,7 @@ a:hover {
 [class*="bg-image"] {
   background-size: cover;
   background-position: center;
-  padding-bottom:15%;
+  padding-bottom:20%;
   background-image:url('villa-2.jpg');
   border: 2px solid white;
 }
@@ -147,4 +147,13 @@ a:hover {
   color: white;
   text-align: center;
   font-size: 0.9rem;
+}
+
+@media(max-width:576px) {
+  [class*="bg-image"] {
+    padding-bottom: 50%;
+  }
+  .big {
+    font-size: 2rem;
+  }
 }
